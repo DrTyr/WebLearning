@@ -9,7 +9,6 @@
     justify-content: space-between;
     align-items: center;
     align-content: space-around;
-    flex-wrap: wrap;
 }
 
 .wrapper > * {
@@ -39,6 +38,15 @@
 
 .animalPicture {
     background: whitesmoke;
+}
+
+.otherSpecies {
+    background: lightgrey;
+    flex: 0.5 0.5 0;
+}
+
+.speciesArticle {
+    background: moccasin;
 }
 
 @media all and (min-width: 300px) {

@@ -44,13 +44,16 @@ class App extends React.Component {
                                 length="150px"
                             />
                         </aside>
+                    </div>
+                    <div className="wrapper">
                         <aside className="aside otherSpecies">
                             <ul>
+                                {'Les autres espèces'}
                                 <li>Le manchot pygmée</li>
                                 <li>Le gorfou des Snares</li>
                                 <li>Le gorfou du Fiordland</li>
                                 <li>Le manchot antipode</li>
-                            </ul>{' '}
+                            </ul>
                         </aside>
                         <article className="speciesArticle">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -94,6 +97,8 @@ class App extends React.Component {
                             ornare lacinia nulla. Proin placerat nunc at massa
                             mollis tempus.
                         </article>
+                    </div>
+                    <div className="wrapper">
                         <footer className="footer">Footer</footer>
                     </div>
                 </body>
