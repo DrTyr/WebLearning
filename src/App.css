@@ -29,6 +29,7 @@ h1 {
     width: 100%;
 }
 
+/* J'ai C/C le code mais je le comprends pas*/
 a:hover + .box,
 .box:hover {
     display: block;

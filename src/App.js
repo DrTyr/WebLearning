@@ -25,8 +25,8 @@ function App() {
                                 <div class="box">
                                     <iframe
                                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Emperor_Penguin_Manchot_empereur.jpg/580px-Emperor_Penguin_Manchot_empereur.jpg"
-                                        width="100px"
-                                        height="100px"
+                                        width="50%"
+                                        height="50%"
                                     ></iframe>
                                 </div>
                             </li>
