@@ -55,6 +55,8 @@ class App extends React.Component {
                                 <li>Le manchot antipode</li>
                             </ul>
                         </aside>
+                    </div>
+                    <div className="wrapper">
                         <article className="speciesArticle">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Maecenas vel pellentesque leo. Fusce eu massa
