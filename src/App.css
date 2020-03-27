@@ -6,6 +6,10 @@
     flex-flow: row wrap;
     font-weight: bold;
     text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
 }
 
 .wrapper > * {
@@ -26,7 +30,7 @@
     background: deepskyblue;
     padding: 10px;
     flex: 1 1 0;
-    margin: 0;
+    flex-basis: content;
 }
 
 .worldMap {
@@ -56,8 +60,14 @@
     .animalPicture {
         order: 3;
     }
-    .footer {
+    .otherSpecies {
         order: 4;
+    }
+    .speciesArticle {
+        order: 5;
+    }
+    .footer {
+        order: 6;
     }
 }
 
