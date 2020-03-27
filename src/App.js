@@ -21,58 +21,32 @@ class App extends React.Component {
         return (
             <div className="App">
                 <body>
-                    <div className="row">
-                        <div className="column">
+                    <div class="wrapper">
+                        <header class="header">
+                            Les Manchots d'Antarctique
+                        </header>
+                        <aside class="aside worldMap">
                             <img
-                                className="centerImage"
-                                src={this.state.imgSrc}
-                                height="150"
-                                width="150"
-                                alt="Carte de l'antarctique"
-                            />
-
-                            <h1>Les Manchots d'Antarctique</h1>
-                            <ul>
-                                <li>
-                                    <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Emperor_Penguin_Manchot_empereur.jpg/580px-Emperor_Penguin_Manchot_empereur.jpg">
-                                        Le manchot empereur
-                                    </a>
-                                    <div className="box">
-                                        <iframe
-                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Emperor_Penguin_Manchot_empereur.jpg/580px-Emperor_Penguin_Manchot_empereur.jpg"
-                                            width="50%"
-                                            height="50%"
-                                        ></iframe>
-                                    </div>
-                                </li>
-                                <li>Le manchot d'Adélie</li>
-                                <li>Le manchot à jugulaire</li>
-                                <li>Le manchot papou</li>
-                            </ul>
-
-                            <textarea
-                                value={this.state.textAreaValue}
-                                onChange={this.handleChange}
-                            />
-                            <div>{this.state.textAreaValue}</div>
-                        </div>
-                        <div className="column">
-                            <img
-                                className="centerImage"
                                 src="https://tse1.mm.bing.net/th?id=OIP.YPhOa_qtz5G_aL4hftSeQAHaFb&pid=Api"
-                                height="150"
-                                width="150"
                                 alt="Carte de l'antarctique"
+                                width="150px"
+                                length="150px"
                             />
-                            <h1>Les Manchots d'Australie/Nouvelles Zélandes</h1>
-                            <ul>
-                                <li>Le manchot pygmée</li>
-                                <li>Le gorfou des Snares</li>
-                                <li>Le gorfou du Fiordland</li>
-                                <li>Le manchot antipode</li>
-                            </ul>
-                            CECI EST UN TEST !!!!
-                        </div>
+                        </aside>
+                        <article class="speciesName">
+                            <p>Le Manchot Empereur</p>
+                        </article>
+                        <aside class="aside animalPicture">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Emperor_Penguin_Manchot_empereur.jpg/580px-Emperor_Penguin_Manchot_empereur.jpg"
+                                alt="Manchot"
+                                width="150px"
+                                length="150px"
+                            />
+                        </aside>
+                    </div>
+                    <div class="wrapper">
+                        <footer class="footer">Footer</footer>
                     </div>
                 </body>
             </div>

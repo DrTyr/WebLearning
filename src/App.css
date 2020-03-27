@@ -1,38 +1,66 @@
 .App {
 }
 
-h1 {
-    background-color: lightgrey;
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
     text-align: center;
 }
 
-.column {
-    float: left;
-    width: 50%;
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: '';
-    display: table;
-    clear: both;
+.header {
+    background: rgb(71, 172, 255);
 }
 
-.centerImage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.footer {
+    background: lightgreen;
 }
 
-.box {
-    display: none;
-    width: 100%;
+.speciesName {
+    text-align: center;
+    background: deepskyblue;
+    padding: 10px;
+    flex: 1 1 0;
+    margin: 0;
 }
 
-/* J'ai C/C le code mais je le comprends pas*/
-a:hover + .box,
-.box:hover {
-    display: block;
-    position: relative;
-    z-index: 100;
+.worldMap {
+    background: whitesmoke;
+}
+
+.animalPicture {
+    background: whitesmoke;
+}
+
+@media all and (min-width: 300px) {
+    .aside {
+        flex: 1 1 0;
+    }
+}
+
+@media all and (min-width: 300px) {
+    .main {
+        flex: 1 1 0px;
+    }
+    .worldMap {
+        order: 1;
+    }
+    .speciesName {
+        order: 2;
+    }
+    .animalPicture {
+        order: 3;
+    }
+    .footer {
+        order: 4;
+    }
+}
+
+body {
+    padding: 2em;
 }
