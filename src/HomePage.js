@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './HomePage.css';
+import { Link } from 'react-router-dom';
 
 export default class HomePage extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            currentPage: 'page1',
             imgSrc:
                 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Location_Antarctica.svg/langfr-560px-Location_Antarctica.svg.png',
         };
@@ -17,11 +17,7 @@ export default class HomePage extends React.Component {
         this.setState({ textAreaValue: event.target.value });
     };
 
-    changePage = newPage => {
-        this.setState({ currentPage: newPage });
-    };
-
-    page1 = () => {
+    render() {
         return (
             <div className="HomePage">
                 <body>
@@ -110,33 +106,14 @@ export default class HomePage extends React.Component {
                             ornare lacinia nulla. Proin placerat nunc at massa
                             mollis tempus.
                         </article>
-                        <button
-                            onClick={() => {
-                                this.changePage('page2');
-                            }}
-                        >
-                            page 2
-                        </button>
                     </div>
                     <div id="pied" className="wrapper">
-                        <footer className="footer">Footer</footer>
+                        <footer className="footer">
+                            <Link to={`/Page1`}>PAGE 1</Link>
+                        </footer>
                     </div>
                 </body>
             </div>
         );
-    };
-
-    page2 = () => {
-        return <div>Page 2</div>;
-    };
-
-    page3 = () => {
-        return <div>Page 3</div>;
-    };
-
-    render() {
-        //return this.page3();
-        //return this['page3']();
-        return this[this.state.currentPage]();
     }
 }
