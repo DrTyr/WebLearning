@@ -10,10 +10,23 @@
     align-items: center;
     align-content: space-around;
 }
-
 .wrapper > * {
     padding: 10px;
     flex: 1 100%;
+}
+
+.wrapper2 {
+    display: flex;
+    flex-flow: nowrap;
+    font-weight: bold;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
+
+.wrapper2 > * {
+    padding: 10px;
 }
 
 .header {
@@ -27,9 +40,8 @@
 .speciesName {
     text-align: center;
     background: deepskyblue;
-    padding: 10px;
     flex: 1 1 0;
-    flex-basis: content;
+    align-self: stretch;
 }
 
 .worldMap {
@@ -42,11 +54,13 @@
 
 .otherSpecies {
     background: lightgrey;
-    flex: 0.5 0.5 0;
+    flex-grow: 1;
+    align-items: flex-start;
 }
 
 .speciesArticle {
     background: moccasin;
+    flex-grow: 2;
 }
 
 @media all and (min-width: 300px) {
@@ -72,7 +86,7 @@
         order: 4;
     }
     .speciesArticle {
-        order: 2;
+        order: 5;
     }
     .footer {
         order: 6;

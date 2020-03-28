@@ -21,7 +21,7 @@ class App extends React.Component {
         return (
             <div className="App">
                 <body>
-                    <div className="wrapper">
+                    <div id="blocDeTete" className="wrapper">
                         <header className="header">
                             Les Manchots d'Antarctique
                         </header>
@@ -45,8 +45,8 @@ class App extends React.Component {
                             />
                         </aside>
                     </div>
-                    <div className="wrapper">
-                        <aside className="aside otherSpecies">
+                    <div id="bloccentral" className="wrapper2">
+                        <article className="otherSpecies">
                             <ul>
                                 {'Les autres espèces'}
                                 <li>Le manchot pygmée</li>
@@ -54,9 +54,7 @@ class App extends React.Component {
                                 <li>Le gorfou du Fiordland</li>
                                 <li>Le manchot antipode</li>
                             </ul>
-                        </aside>
-                    </div>
-                    <div className="wrapper">
+                        </article>
                         <article className="speciesArticle">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Maecenas vel pellentesque leo. Fusce eu massa
@@ -100,7 +98,7 @@ class App extends React.Component {
                             mollis tempus.
                         </article>
                     </div>
-                    <div className="wrapper">
+                    <div id="pied" className="wrapper">
                         <footer className="footer">Footer</footer>
                     </div>
                 </body>
