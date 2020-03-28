@@ -8,11 +8,11 @@
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    align-content: space-around;
+    align-content: center;
 }
 .wrapper > * {
     padding: 10px;
-    flex: 1 100%;
+    flex: 1;
 }
 
 .wrapper2 {
@@ -31,6 +31,8 @@
 
 .header {
     background: rgb(71, 172, 255);
+    font-weight: bold;
+    text-align: center;
 }
 
 .footer {
@@ -40,16 +42,19 @@
 .speciesName {
     text-align: center;
     background: deepskyblue;
-    flex: 1 1 0;
     align-self: stretch;
+    order: 2;
 }
 
 .worldMap {
-    background: whitesmoke;
+    background: red;
+    order: 1;
+    align-self: stretch;
 }
 
 .animalPicture {
-    background: whitesmoke;
+    background: greenyellow;
+    order: 3;
 }
 
 .otherSpecies {
@@ -61,15 +66,16 @@
 .speciesArticle {
     background: moccasin;
     flex-grow: 2;
+    align-self: stretch;
 }
 
-@media all and (min-width: 300px) {
+@media all and (min-width: 800px) {
     .aside {
         flex: 1 1 0;
     }
 }
 
-@media all and (min-width: 300px) {
+@media all and (min-width: 800px) {
     .main {
         flex: 1 1 0px;
     }

@@ -21,29 +21,38 @@ class App extends React.Component {
         return (
             <div className="App">
                 <body>
+                    <header className="header">
+                        Les Manchots d'Antarctique
+                    </header>
                     <div id="blocDeTete" className="wrapper">
-                        <header className="header">
-                            Les Manchots d'Antarctique
-                        </header>
-                        <aside className="aside worldMap">
+                        <article className="worldMap">
                             <img
                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Location_Antarctica.svg/langfr-560px-Location_Antarctica.svg.png"
                                 alt="Carte de l'antarctique"
                                 width="150px"
                                 length="150px"
                             />
-                        </aside>
+                        </article>
                         <article className="speciesName">
                             <p>Le Manchot Empereur</p>
                         </article>
-                        <aside className="aside animalPicture">
+                        <article className="animalPicture">
                             <img
                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Emperor_Penguin_Manchot_empereur.jpg/580px-Emperor_Penguin_Manchot_empereur.jpg"
                                 alt="Manchot"
                                 width="150px"
                                 length="150px"
                             />
-                        </aside>
+                            <div>
+                                <audio controls>
+                                    <source
+                                        src="media/CriManchot.mp3"
+                                        type="audio/mp3"
+                                        preload="none"
+                                    />
+                                </audio>
+                            </div>
+                        </article>
                     </div>
                     <div id="bloccentral" className="wrapper2">
                         <article className="otherSpecies">
