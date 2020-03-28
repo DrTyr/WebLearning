@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './HomePage.css';
 
-class App extends React.Component {
+export default class HomePage extends React.Component {
     constructor(props) {
         super(props);
 
@@ -23,7 +23,7 @@ class App extends React.Component {
 
     page1 = () => {
         return (
-            <div className="App">
+            <div className="HomePage">
                 <body>
                     <header className="header">
                         Les Manchots d'Antarctique
@@ -140,5 +140,3 @@ class App extends React.Component {
         return this[this.state.currentPage]();
     }
 }
-
-export default App;
