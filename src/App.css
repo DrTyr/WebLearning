@@ -10,10 +10,13 @@
     align-items: center;
     align-content: center;
 }
+
+/*
 .wrapper > * {
     padding: 10px;
     flex: 1;
 }
+*/
 
 .wrapper2 {
     display: flex;
@@ -25,9 +28,11 @@
     align-content: space-around;
 }
 
-.wrapper2 > * {
+/*
+:*.wrapper2 > * {
     padding: 10px;
 }
+*/
 
 .header {
     background: rgb(71, 172, 255);
@@ -69,6 +74,10 @@
     align-self: stretch;
 }
 
+audio {
+    width: 200;
+}
+
 @media all and (min-width: 800px) {
     .aside {
         flex: 1 1 0;
@@ -99,6 +108,8 @@
     }
 }
 
+/*
 body {
     padding: 2em;
 }
+*/

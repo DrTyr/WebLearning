@@ -7,7 +7,7 @@ class App extends React.Component {
         super(props);
 
         this.state = {
-            textAreaValue: 'TextArea valuedqsgqfsdf',
+            currentPage: 'page1',
             imgSrc:
                 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Location_Antarctica.svg/langfr-560px-Location_Antarctica.svg.png',
         };
@@ -17,7 +17,11 @@ class App extends React.Component {
         this.setState({ textAreaValue: event.target.value });
     };
 
-    render() {
+    changePage = newPage => {
+        this.setState({ currentPage: newPage });
+    };
+
+    page1 = () => {
         return (
             <div className="App">
                 <body>
@@ -106,6 +110,13 @@ class App extends React.Component {
                             ornare lacinia nulla. Proin placerat nunc at massa
                             mollis tempus.
                         </article>
+                        <button
+                            onClick={() => {
+                                this.changePage('page2');
+                            }}
+                        >
+                            page 2
+                        </button>
                     </div>
                     <div id="pied" className="wrapper">
                         <footer className="footer">Footer</footer>
@@ -113,6 +124,20 @@ class App extends React.Component {
                 </body>
             </div>
         );
+    };
+
+    page2 = () => {
+        return <div>Page 2</div>;
+    };
+
+    page3 = () => {
+        return <div>Page 3</div>;
+    };
+
+    render() {
+        //return this.page3();
+        //return this['page3']();
+        return this[this.state.currentPage]();
     }
 }
 
